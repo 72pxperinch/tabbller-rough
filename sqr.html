@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Numbers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="/index.html" style="position: fixed; top: 15px; left: 15px; width: 50px; padding: 10px; border-radius: 10px; text-decoration: none; border: 1px solid black; text-align: center;"> Back </a>
+    
+    <div id="timer" style="position: fixed; top: 15px; right: 15px; width: 100px; padding: 10px; border-radius: 10px; border: 1px solid black; text-align: center; color: red;">Timer</div>
+    
+    <div class="container">
+        <h1>Square Numbers</h1>
+        <button id="startStopButton" onclick="startQuiz()" class="fullwidth strt">Start Quiz</button>
+        <div id="questionCube">Question</div>
+        <input type="number" id="answer" placeholder="Your answer">
+        <button onclick="checkAnswer()" class="fullwidth strt">Submit</button>
+        <div id="result"></div>
+        <div id="score"></div>
+        <button id="clearScoreButton" onclick="clearScore()">Clear Score</button>
+    </div>
+
+    <button id="hintButton" onclick="toggleHint()">?</button>
+
+    <div id="squaresHintContainer">
+        <h2>Squares of Numbers from 1 to 50</h2>
+        <div id="squaresHint" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px"></div>
+    </div>
+
+    <script src="SqrScript.js"></script>
+</body>
+</html>

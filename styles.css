@@ -1,0 +1,182 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 400;
+}
+
+#question {
+    font-size: 3em;
+    margin: 20px 0;
+    max-width: 350px;
+}
+
+#questionCube {
+    font-size: 2em;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#answer {
+    font-size: 3em;
+    width: 150px;
+    max-width: 150px;
+    height: 75%;
+    margin: auto 0;
+    border-radius: 10px ;
+    -webkit-appearance: textfield; 
+    -moz-appearance: textfield; 
+    appearance: textfield; 
+}
+
+#answer::placeholder {
+    font-size: 0.5em;
+    position: relative;
+    bottom: 10px;
+}
+
+input[type="number"] {
+    font-size: 1.25em;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #a8e769;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.25em;
+}
+
+#clearScoreButton {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#clearScoreButton:hover {
+    background-color: #ff1a1a;
+}
+
+#tableButtons,
+#tablesHintContainer,
+#squaresHintContainer,
+#cubesHintContainer {
+    margin: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.table-button.selected {
+    background-color: #4CAF50;
+    color: #fff;
+    border: 1px solid #4CAF50;
+}
+
+#tablesHintContainer,
+#squaresHintContainer,
+#cubesHintContainer {
+    display: none;
+    /* Hide by default */
+    max-width: 500px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tablesHint table,
+#squaresHint table,
+#cubesHint table {
+    max-width: 500px;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+#tablesHint th,
+#tablesHint td,
+#squaresHint th,
+#squaresHint td,
+#cubesHint th,
+#cubesHint td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tablesHint th,
+#squaresHint th,
+#cubesHint th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#hintButton {
+    position: fixed;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #deedff;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.strt {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
